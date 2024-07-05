@@ -1,0 +1,40 @@
+ 
+Task-3: 
+Write a detailed algorithm and pseudocode for the following requirement:
+		Requirement:   Display the Finbonacci Series that are less than 100.
+		
+		
+		
+		
+Phase-1:		Prepare algorithm
+~~~~~~~~~~~~~~~~~~~~~~~~~	
+1.  Start  by assign 0 and 1 to separate vairbales (x, y)
+2.  Print x, y
+3.  Sum x, y and store in z  
+4.  Print z  
+5.  Assign  y value to x   
+6.  Assign  z  value to y 
+7.  Repeat Steps 3 to Step 6 till  z is less than 100
+8.  Exit 
+
+
+
+
+ 
+Phase-2:  Prepare pseudocode
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+x = 0
+y = 1
+Print x, y 
+z = 1
+While  ( z <= 100 )
+	z = x + y	
+	Print  z
+	x = y
+	y = z 	
+End While 
+
+		
+		
+
+

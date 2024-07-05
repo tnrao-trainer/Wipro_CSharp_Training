@@ -1,0 +1,34 @@
+Task-2: 
+Write a detailed algorithm and pseudocode for the following requirement:
+		Requirement:    Algorithm for finding the maximum number in a list
+		
+		
+Phase-1:		Prepare algorithm
+~~~~~~~~~~~~~~~~~~~~~~~~~	
+1.  Start with by create an array with collection of numbers. 
+2.  Consider the first element as the maximum.
+3.  Compare the current maximum with the next element in the list.
+4.  If the next element is greater than the current maximum, update the maximum.
+5.  Repeat steps 3 and 4 until the end of the list.
+6.  The current maximum is the largest number in the list.
+
+
+
+Phase-2:  Prepare pseudocode
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 	ar =  [45,8,63,91,23,5,78]
+	max = ar[0]
+	n =  ar.length 
+	
+	For i = 1 to n - 1
+		If  max <  ar[i] then
+			 max = ar[i]
+	    End If 		 
+	End For
+	
+	Print max 
+	
+	
+-------------------------------------------------------------------------------------------
+
+  

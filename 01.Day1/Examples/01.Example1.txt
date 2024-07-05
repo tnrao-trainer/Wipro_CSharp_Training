@@ -1,0 +1,31 @@
+Task-1: 
+Write a detailed pseudocode for a simple program that takes a number as input, calculates the square if it's even or the cube if it's odd, and then outputs the result. Incorporate conditional and looping constructs.
+
+
+
+Phase-1:		Prepare algorithm
+~~~~~~~~~~~~~~~~~~~~~~~~~
+1. 	Start by read a number as input 
+2.		If the number is even,  find square of the number 
+3. 	Else,   find the cube of the number
+4.		Print the result 
+5.     Exit
+
+
+Phase-2:  Prepare pseudocode
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+		n = 10		
+		
+		If  n % 2 = 0  then
+				result =  n * n				
+		Else
+				result = n * n * n
+		End If 
+
+		Print  result 
+		
+-------------------------------------------------------------------------------------------------------
+
+
+
+ 
