@@ -1,0 +1,36 @@
+1. Write a C# Program to process the employee details as per the below instructions:
+			a.   Read  employee id, name,  basic salary,  is contract employee, deptno, email id 
+			b.   Find out total salary by calculating HRA - 15%,  MA - 10%,  TA - 15%  
+			
+						Net Salary =  basic + HRA + MA + TA
+						
+			c.    Finally display all the details on the console window. 
+			
+			
+			HRA :   House Rent Allowance
+			MA :  Medical Allowance
+			TA :  Travel Allowance
+			
+		
+
+2.   Generate  Bill Details
+
+-->  AMB Mall multiplex is developing application for its cafeteria. The application should be able to calculate the bill details for the following scenario. You bought pizzas, puffs and cool drinks. 
+
+	Consider   the following prices :
+    Rs.300/pizza
+    Rs.50/puffs
+    Rs.130/pepsi
+		
+	Generate a bill.
+	
+	a.  Read No. pizzas, puffs, pepsis from user
+	b.  The bill details must include the total cost of pizzas, total cost of puffs and total cost of pepsis. 
+	c.   Calculate the grand total and display.
+	d.  Display the GST and CESS amount. GST is 9% and CESS is 9% of the total price.
+
+ 
+
+3.  How to convert the string to integer using Convert class? Check the prev. examples by using Convert class.
+
+		
