@@ -1,24 +1,14 @@
-
 Training :   PCAT C#  
 Day-3:  9th July, 2024
 ~~~~~~~~~~~~~~~~~~
 
-
-
 1.   What is the significance of scope of the variable?  What are the different scope options available in C#?
-
 2.  Difference between a variable and constant?
-
 3.  What is the maximum value that we can store in integer variable in C#? 
-
-
-
 
 
   Console.WriteLine(int.MinValue);
   Console.WriteLine(int.MaxValue);
-
-
 
 
 
@@ -104,7 +94,137 @@ DataTypes
 4.    bool, datetime
 5.    object  
 
+-----------------------------------------------------------------------------------------
 
 
 
- 
+
+
+
+
+
+1. How to get date after 10 days of today's date?
+2. How to find out no. of days between the two dates?
+3. How to display the follwing format using toString()?
+
+		Tuesday,  9 July,  2024  at  11:28 AM 
+
+--------------------------------------------------------------------------------------------
+
+
+Constants in C#
+~~~~~~~~~~~~~~~~~~
+
+--> use const keyword to declare constants
+--> value should assigned at compile time
+--> can't use const as method parameters
+
+
+	const int PIZZA_PRICE = 300;
+ //  PEPSI_PRICE = 4564;    // error
+
+
+
+
+
+
+
+
+
+VS Short cut :			Ctrl + K, Ctrl + D  
+	
+
+---------------------------------------------------------------------------------
+
+
+
+
+
+
+Math :   +    -   *  /   %
+				++     --
+				
+Assignment :			+=    -=   *=   /=   
+Logical :  				&&    ||    !
+Comparison :			<    <=    >   >=   ==   != 
+
+
+
+------------------------------------------------------------------------------------
+
+
+Scope of the variables
+~~~~~~~~~~~~~~~~~~~~
+	-->  Life time of the variable which is available in memory. 
+
+1.  Global / Class  -- instance variable 
+			---  access in all the methods of that class 
+2.  Local 
+			--- access within the method 
+			
+3.  Block scope :
+			---  access within the block of the code:   for, while, do..while, if..else
+			
+4.  In-line scope variable 
+			---  access  within the line  
+			
+		Console.WriteLine(  (new Date(2024,7,12)).ToString("MM-dd-yy")));
+
+-------------------------------------------------------------------------------
+
+
+Console.ReadLine() 
+
+String data type can store all types of data. 
+
+	"123"		----	int.Parse()
+	"true"
+	"452.25"
+	"7/9/2024"
+	"Hello"
+
+-------------------------------------------------------
+
+
+
+
+Emp e1 = new Emp();
+Student s1 = new Student()
+Dept d1 = new Dept()
+...
+...
+
+
+
+Object  obj;
+
+obj =  e1;
+obj =  s1;
+obj =  d1;
+
+
+What is System.Object Class?
+
+-->  Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. -->  This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.
+-->  All classes that we are creating in .net applications are becomes child classes of System.Object. 
+
+
+Object  obj;
+
+obj =  e1;
+obj =  s1;
+obj =  d1;
+
+
+Hint :   According to OOPs concepts (Inheritance - Polymorphism), any child class objects can store in parent class references. 
+
+
+What is boxing and Unboxing  in  C#?
+
+
+-->  Boxing is the process of converting a values datatype into an object wrapper datatype
+--> Unboxing is the process of converting a value from an object wrapper type back to the value type. 
+
+
+
+
