@@ -1,1 +1,110 @@
 
+Training :   PCAT C#  
+Day-3:  9th July, 2024
+~~~~~~~~~~~~~~~~~~
+
+
+
+1.   What is the significance of scope of the variable?  What are the different scope options available in C#?
+
+2.  Difference between a variable and constant?
+
+3.  What is the maximum value that we can store in integer variable in C#? 
+
+
+
+
+
+  Console.WriteLine(int.MinValue);
+  Console.WriteLine(int.MaxValue);
+
+
+
+
+
+
+C# Syntax Rules
+~~~~~~~~~~~~~~~
+
+1.  Statement termination with semicolon 
+2.  Comments
+		//   Single line comment
+		/*
+				Multi-line comment 
+		*/
+
+3.  Accessing the classes with namespace name:  
+
+			System.Console.WriteLine();
+			System.Console.ReadLine();
+
+		Accessing the classes without namespace name:  
+				Console.WriteLine();
+
+
+	Note:   If multiple namespaces having the same class, if you want to target a specific namespace.
+	
+		Namespace :      
+									EmpManagementApp  -->    Employee, Dept
+									DeptManagementApp  -->    Dept
+			
+				
+
+		using  EmpManagementApp;
+		using DetpManagementApp;
+		
+		
+		Dept   obj = new Dept();		//  error
+		
+		EmpManagementApp.Dept = new EmpManagementApp.Dept();
+		
+		
+		
+4.  File Names :			*.cs
+
+						Program.cs
+						Employee.cs
+						Hello.cs   			-----		define Dept Class 
+					
+
+5.		namespace
+				class		
+						methods
+								logic 
+
+
+6.  Blocks should be prepared with {  }
+
+		
+VB.NET
+		Class   Program
+		
+		End Class 
+		
+
+C#.NET
+		 class  Program
+		 {
+			 			 
+		 }
+
+7.  Define one class  per file 
+
+----------------------------------------------------------------------------------------------
+
+
+
+
+
+DataTypes
+~~~~~~~~~~
+1.    byte,  short,  int,   long 
+2.    float, double, decimal 
+3.    char, string 
+4.    bool, datetime
+5.    object  
+
+
+
+
+ 
