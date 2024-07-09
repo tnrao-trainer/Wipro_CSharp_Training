@@ -1,0 +1,33 @@
+1.  Write a c# program to implement the following requirement:
+			a.  Try to add sum of two integers 
+			b.  Each integers variable should holds the maximum of value of integers
+			c.   Check the result if there is any issue.  
+			d.  Try to solve with appropriate data types. 
+			
+2.  Write a C# program to implement the following requirement:
+			
+			a.  Read product information :  product id, pname, unit price, quantity 
+			b.  Find the total amount.   
+			c.   Apply the following conditions:
+							i.   Give 10%  discount, if amount is greater than 1000
+							ii.   Give 15%  discount, if amount is greater than 3000
+							iii.   Give 20%  discount, if amount is greater than 5000
+							
+3.   Apex medical clinic want to maintain the patients records. Develop the application to maintain patients details
+
+			a.  Need to create required no. of variables  to store patients details
+			b.  It should include all data types :   int, string, bool, double, datetime 
+			c.  Minium 8  details need to be store about a patient
+			
+
+4.   Udemy is launching a special course on cloud computing on 25th June, 2024. Consider the following requirement and design the application.  Registration last date : 20th June. 
+
+			a.   Need to store subscribers details. You can decide required information 
+			b.   Consider course fee :  INR. 25000
+			c.    Provide 10%  if the subscriber registered before 10th June
+			d.    Provide 15%  if the subscriber registered before 15th June
+			e.     Subscribers are allowed to register after 20th June with 5% late fee. 
+			f.      Finally Display subscriber detail
+			
+
+			
