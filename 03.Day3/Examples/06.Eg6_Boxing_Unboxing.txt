@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Policy;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+namespace ConsoleApp13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 123;
+            double d = 45.12;
+            bool b = true;
+
+            Console.WriteLine("----  Original Values -----------");
+            Console.WriteLine(x);
+            Console.WriteLine(d);
+            Console.WriteLine(b);
+
+
+            Object obj;
+            obj = x;  //Boxing -- Implicit
+            int x2 = (int) obj;  // Unboxing -- Explicit          
+
+            obj = d;
+            double d2 = (double) obj;
+
+            obj = b;
+            bool b2 = (bool) obj;
+            
+
+
+            Console.WriteLine("----  Unboxed Values -----------");
+            Console.WriteLine(x2);
+            Console.WriteLine(d2);
+            Console.WriteLine(b2);
+
+
+            Console.ReadLine();
+        }
+    }
+}

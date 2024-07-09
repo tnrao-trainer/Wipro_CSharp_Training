@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Policy;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+namespace ConsoleApp13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Employee empObj = new Employee();
+            Dept deptObj = new Dept(); 
+
+
+            Object obj;
+            
+            obj = empObj;       //  Implicit Type Casting
+            Employee e1 = (Employee) obj;   //  Explicit Type Casting
+
+
+            obj = deptObj;
+            Dept d1 = (Dept) obj;
+              
+
+
+
+
+
+            ArrayList list = new ArrayList();
+            list.Add(e1);
+            list.Add(d1);
+
+            
+            Console.ReadLine();
+        }
+    }
+}
