@@ -1,0 +1,38 @@
+// Write a C#  Program to implement user login process.  
+// Verify the user id and password
+// Valid :   Welcome to Admin
+// Invalid :   Invalid User Id or Password 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Policy;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter User Id : ");
+            string userId = Console.ReadLine();
+
+            Console.WriteLine("Enter Password : ");            
+            string password = Console.ReadLine();
+
+
+            if (userId.Trim() == "admin"  && password.Trim() == "admin123"  )
+            {
+                Console.WriteLine("Welcome to Admin");
+            }
+            else
+            {
+                Console.WriteLine("Invalid User Id or Password");
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
