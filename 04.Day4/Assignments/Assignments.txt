@@ -1,0 +1,32 @@
+1.  Write a c# program to convert number in characters. 
+
+	Input :  123
+	Output :  one two three 
+	
+	Input :  2024
+	Output :  two zero two four
+	
+
+2.   Write a c# program to generate the following series using loops in c#:
+
+		 a.  1  4  9  16   25  36  49  64  81 100
+		 b.  0   1    1   2   3  5  8  13  21  34  55 89 144 
+		 c.   3   5   6   9    10  12  15  18  20  21 24  25  27  30
+		 
+3.   		Write a c# program to  implement the following requirement:
+
+			a.   Read some numbers from user  (around 20 numbers)
+			b.   Find out sum of all even numbers 
+			c.    Find out sum of odd numbers
+			d.    Finally display the results 
+			
+			Hint :  Use loops to implement the above requirement 
+			
+
+4.    	Write a c# program to  implement the following requirement:
+
+		a.   Read five product prices and corresponding quantities from user 
+		b.   Find out total amount for all produts 
+		c.    Finally display the total amount 
+			
+			Hint :  Use loops to implement the above requirement 	
