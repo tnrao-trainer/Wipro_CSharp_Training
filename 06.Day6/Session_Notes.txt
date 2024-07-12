@@ -1,1 +1,157 @@
-fgagsdfgsdfgsdgf
+Training :   PCAT C#  
+Day-6:  12t July, 2024
+~~~~~~~~~~~~~~~~~~
+ 
+ 
+ 1.  What is the significance of index in arrays?
+ 2.   Can we use Array variables as parameters in function?
+ 3.   Study the Bubble sort algorithm to sort the array of numbers?
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Arrays
+ ~~~~~~
+  -->  Arrays consider as reference types as it stores the reference of the location where array elements are exists.  
+ -->  Array helps to organize multiple values.  
+ -->   Array is collection of similar data items.  
+ -->  Index :   refers the position of the elements in the array
+					    access array elements
+						start index :    0
+						end index  :     ar.Length - 1
+						
+-->  In C#,  use Length property to know the size of the array. 
+
+
+Creating Arrays:
+
+ 
+syntax:	type[]   array_name;
+Eg:
+
+		int[]  empNumbers;
+		string[]  enames;
+		
+
+
+   int[] marks;	// without size 
+   int[] marks = new int[10];  // with size
+   
+   int[] marks = { 1, 2, 3, 4 };   // with values
+   int[] marks = new int[4]{ 1, 2, 3, 4 };   // with values
+
+
+
+
+
+Camel Casing --- Naming standards 
+
+	-->  namespace names, Class Names, Method names, property names,
+	-->  Every word start with capital letter
+	
+		Eg:			Console, System, WriteLine, ReadLine, Length,...
+
+
+
+
+
+
+usage of foreach in C#
+~~~~~~~~~~~~~~~~~~
+
+
+Syntax:
+	
+	foreach(type variable_name  in  array_name)
+	{
+		
+	}
+	
+Eg:		foreach(int  item  in  marks)	
+			{
+					Console.WriteLine(item);
+			}
+
+
+		"123"	---		123
+		"25"		---		25
+		"Hello"	---			FormatException
+		""	---				FormatException
+
+
+
+What is the difference between for and foreach?
+
+foreach ----		to process collections (Arrays, Collections -- List, ArrayList,...)				
+						item based 
+						sequential accessing  only
+						forward only
+		
+---------------------------------------------------------------------------
+
+Array Methods
+~~~~~~~~~~~~~
+
+1.  Array.Reverse()
+2.  Array.Sort()
+3.  Array.Clear()
+4.  Array.IndexOf()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Processing 2D Arrays in C#
+~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+ar.Length 	----	property, returns total number of items in all dimensions. 
+
+ar.GetLength(dimension)	----		method, returns total number of items in the given dimension. 
+
+		ar.GetLength(0)		---		1st dimension
+		ar.GetLength(1)		---		2nd dimension
+	
+	
+	
+
+Task-2
+~~~~~~
+Write a C# program to process product prices. 
+
+	a. Create an array dynamically  --- size should be get from user
+	b. Read all prices 
+	c. Find out the total amount
+	
+		
+Task-3
+~~~~~~	
+Write a C# program to build an 2D-Array ,  read data from user  and print the values. 
+	
+	a. Read no. of rows and cols from user	--- dynamic
+	b. Read data from user at runtime
+	c. Print the data 
+	
+---------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
