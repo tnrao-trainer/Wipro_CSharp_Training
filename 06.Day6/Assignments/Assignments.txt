@@ -1,5 +1,5 @@
-
-
+Assignments on Arrays in C#(12th July, 2024)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1.  Write a C# Sharp program to find the second largest element in an array
 2.  Write a C# Sharp program to  reverse array elements without using pre-defined methods. 
 3.  Write a C# program to sort the array elements using Bubble sort technique. (Hint:  Do not use pre-defined methods ) 
