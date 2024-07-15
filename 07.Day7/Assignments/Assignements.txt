@@ -1,0 +1,29 @@
+1.  Create C# program to process customer details using object oriented programming.
+
+	•	Class Name :	Customer
+	•	Class should allow the following parameters in constructor
+				Customer c1   = new Customer();
+				Customer c2   = new Customer(10256);
+				Customer c3   = new Customer(10256, “Scott”);
+				Customer c4   = new Customer(10256, “Scott”, “Hyd”);
+
+	•	Declare required number of private and properties in the class (Hint Use regular properties). 
+	•	Method :  ShowDetails() to display all the values in single Line.
+				Eg:	Customer Details  ::   Id : 10256, Name : Scott, City : Hyd
+
+
+2.  Create C#  program to process product details using object oriented programming.
+	•	Class Name : Product	 
+	•	Create properties :   ProductId, ProductName, UnitPrice, Quantity	(Hint: Auto-Implemented Properties)
+	•	Constructor should allow productId as parameter
+	•	ProductId – should be readonly property		(Create readonly property for this)
+
+ 
+3.   Apex medical clinic want to maintain the patients records. Develop the application to maintain patients details using Object Oriented Programming.
+
+			a.  Create a class called PatientDetails. 
+			b.  Need to create required no. of properties  to store patients details
+			c.  It should include all data types :   int, string, bool, double, datetime 
+			d.  Minium 8  properties required to be store about a patient
+			e.  Create a method to display all the details 
+			
