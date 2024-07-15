@@ -1,1 +1,275 @@
+Training :   PCAT C#  
+Day-7:  15th  July, 2024
+~~~~~~~~~~~~~~~~~~
+ 
+ 
+ 
+ 
+ 
+ 1 patient -  8 variables 
+ 
+ 1 patient -  1 object 	(diff. types of data as data members)
+ 
+ 
+ 
+	void PrintPatientDetails(  Patient   obj )
+	{
+		
+	}
+ 
+ 
+ 
+ 
+ 
+ Class :   Template/Blueprint of the object
+ Object :   Instance of the class 
+ 
+ 
+ Members of the class
+ ~~~~~~~~~~~~~~~~~
+ 
+ 
+ class  ClassName
+ {
+	 // 1.  Fields (data members/variables/...)
+	 // 2. Methods 
+	 // Constructors /  / Properties
+}
 
+
+
+-->  Default access specifier is private. 
+-->  Use public keyword explicitly to declare public items 
+
+
+
+
+
+
+
+Encapsulation
+The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:
+
+declare class variables/attributes as private
+provide public get and set methods to access and update the value of a private variable
+
+
+
+
+Accessing individual data members / fields
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Special Methods:
+		1.  getter 	---		reading the value from private variable
+		2.  setter 	----		writing the value to private variable 
+
+	
+
+public void SetSname(string  str)
+{
+	_sname = str;
+}
+
+
+
+
+
+
+Properties:
+	-->  Combination of getter and setter. 
+	--> C# introduce short cut notation of the setter and getter
+	
+		
+		public int StudetnId
+		{
+			get { return _sid; }
+			set { _sid = value; }
+		}
+	
+	
+
+
+
+
+
+private int _sid;
+
+public int StudetnId
+{
+  get { return _sid; }
+  set { _sid = value; }
+}
+  -------------------------------------------------
+  
+  // Auto-Implemented Properties in C#
+  public int StudetnId  { get; set; }
+  
+  
+ class Student  
+    {  
+        // Auto-implemented Properties  
+        public int ID { get; set; }  
+        public string Name { get; set; }  
+        public string Email { get; set; }  
+    }   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  int x;   
+  x = 10;
+  
+  
+  int x = 10;	// Initialize the variable 
+  
+  
+  
+	// Initialize the object 
+    Student studentObj = new Student(21554)	;
+	
+	
+	
+	Constructors in C#
+	~~~~~~~~~~~~~~~~~~~
+	
+	-->  A constructor is a special method that is used to initialize objects. 
+	-->  A constructor is a special class method that is called every time an instance of the class is made.
+	
+	
+	Create Constructors:
+			
+			public  Student(int id)
+			{
+				_sid = id;
+			}
+	--------------------------------------------------------------------------------------------------------
+	
+	Inheritance
+	~~~~~~~~~~~
+ 
+		class Parent 
+		{
+			// members 
+		}
+
+		class  Child   :   Parent
+		{
+				// members 
+		}
+		
+		
+	-->  	Inheritance is a feature of object-oriented programming languages that allows you to define a base class that provides specific functionality (data and behavior) and to define derived classes that either inherit or override that functionality.
+
+	--> Inheritance provides several advantages including reusability, saving time and effort, data hiding, extensibility, easy understandability, and reliability.
+	
+	
+
+Scope of the members of class  ---  Access Specifiers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+							In Parent				In Child			Object of child	
+private				Yes							No						No
+public					Yes							Yes						Yes
+protected			Yes							Yes						No
+------------------------------------------------------------------------------------------
+internal 
+
+	
+Note:  internal keyword is applicable to class level.   When we declare a type or type member as internal , it can be accessed only within the same assembly(project).
+
+-------------------------------------------------------------------------------------------------------
+
+How to send data from child class constructor to parent class constructor?
+
+	Usage:
+	
+		public ChildClass(int id) : base(id) 
+        {
+
+        }
+----------------------------------------------------------------------------------------------------------------------
+
+Polymorphism
+~~~~~~~~~~~~~~	
+			
+	a.  Overloading
+	b.  Overriding 
+	
+		
+	Polymorphism =  multiple forms 
+	
+
+a.  Overloading
+~~~~~~~~~~~~~
+
+  --> Method overloading in C#,  having two or more methods (or functions) in a class with the same name and different arguments (or parameters). 
+  
+  -->   It can be with a different number of arguments or different data types of arguments.
+	
+
+	 int    m1(  );
+	 string   m1( );    // Not allowed
+	---------------------------------------------
+	 int    m1(  int   sid );
+	string  m1(int   empno);    // Not allowed	
+	--------------------------------------------------------------------------	
+	void  m1( );
+	void  m1(int   empno);    // allowed
+	void m1(string  ename); 	// allowed
+	void m1(string  ename, int empno); 	// allowed
+	void m1(int  empno, string ename); 	// allowed	
+	----------------------------------------------------------------------------
+	
+
+	
+ Overrding 
+~~~~~~~~~
+
+-->  Overrding of methods:
+			--> If derived class defines same method as defined in its base class, it is known as method overriding in C#. 
+			
+			-->  It is used to achieve runtime polymorphism. It enables you to provide specific implementation of the method which is already provided by its base class.
+
+
+
+
+	Keywords:	
+			1.   virtual ---  		overridable 
+											apply on parent class method 
+			
+			2.  override  ---		overriding parent class method which is marked as virtual 
+											apply on child class method 	
+
+
+
+
+
+
+1. How to override  ToString()  method in your class? 
+
+
+
+
+
+
+--> Runtime polymorphisim rule :		
+			Any child class objects can store in parent class reference 
+								
+			
+		object  obj =  123;		// child to parent
+		obj  =  "Scott";
+		obj  =  new Employee();
+		obj  =  25.23;
+		
+		
+		Employee e1 =  (Employee) obj;		
+	
+	
+	 
