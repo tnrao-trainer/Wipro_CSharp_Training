@@ -118,6 +118,84 @@ Output :   C#  to Welcome
  string to Char[]	:			str.ToCharArray();
  char[] to string   :       	    new String(char[])
  
-  
+--------------------------------------------------------------------------------------------
+
+
+
+
+
+Networking Programming
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Correct IP Address: 
+		1.  Four Parts
+		2.  Each part separate with  .
+		3.  Each part should be a number
+		4.  Each part value  should be in between  0 to 255
+
+IP Address :     
+					192.168.0.1
+					17.172.224.47
+					192.168.100.1
+					158.85.65.96
+					172.16.254.1
+					.....
+					
+Wrong:							
+				192.168.100
+				192.168.100.12B
+				192.568.100.12
+				192-568-100.12
+				
+					
+------------------------------------------------------------------------------------------------
+
+
+Problem Statement
+~~~~~~~~~~~~~~~~~~
+
+a.  There are two arrays whose numbers are in sorted order 
+b.  Write a program to merge these two sorted arrays into third array 
+c.   Final array should in sorted order 	(final affect)
+d.   duplicates are not allowed 
+
+
+	A:		10,15,19,20,35,120
+	B:     5,11,17,19,25,150
 	
+	C:     5   10   11  15   17   19   20  25 35   120   
+
+
+-------------------------------------------------------
+
+
+
+	A:		10    15    19 	20	35		120
 	
+	B:          5	   11	 17	19	150
+	
+	C:    
+
+							
+					if(a[i] < b[j])
+					{
+						c[k] = a[i];
+						k++;
+						i++;
+					}
+					else if(a[i]  >  b[j])
+					{
+							c[k] = b[j];
+							k++;
+							j++;
+					}
+					else
+					{
+							c[k] = a[i];
+							k++;
+							i++;
+							j++;
+					}
+					
+					
+ 
