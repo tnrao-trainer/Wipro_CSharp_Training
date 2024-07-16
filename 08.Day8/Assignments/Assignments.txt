@@ -1,0 +1,18 @@
+1. Write a program to find out how many number of words in the given string   
+	(DO NOT USE pre-defined methods).
+	
+2. Write a program to display no. of words that are having equal no. of characters.
+	Input :   Hi  How are you 
+	Output :     3				(i.e  how, are, you contains 3 characters)
+	
+	Input :    You are best thing 
+	Output :   2
+	
+	Input :   Practice makes man perfect 
+	Output :  0
+	
+3.   Write a  program to convert array of strings into comma separated value as single string.  (DO NOT USE pre-defined methods)
+
+	Array :   string[] ar =  {"Books","Pens","Charts"};
+	
+	Output :   Books, Pens, Charts 
