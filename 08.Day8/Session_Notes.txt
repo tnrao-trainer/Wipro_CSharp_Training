@@ -1,0 +1,123 @@
+Training :   PCAT C#  
+Day-8: 16th  July, 2024
+~~~~~~~~~~~~~~~~~~~
+
+
+
+1. What is the significance of static members in C#?
+2. Diff. static and instance members?
+3. How to use static keyword and How to access static members?
+-------------------------------------------------------------------------------------------------
+
+
+
+
+
+Static Keyword:
+	-->  When a variable is declared as static, then a single copy of the variable is created and shared among all objects at the class level.
+
+
+Static Items :		Class Level (Common data for all objects)
+Instance Items :   Object Level (Every object having separate values)
+
+
+
+Example:
+	Console class :   All methods are static 
+	
+	
+
+Static Class
+~~~~~~~~~~~~
+--> A static class is a class that cannot be instantiated(cannot create objects) or derived from, and it is sealed(not allowed to inherits) by default. 
+
+--> The keyword static is used to declare a static class. 
+
+-->  The primary purpose of a static class is to act as a container for static members, such as constants, static fields, and static methods.
+
+
+	static class  ClassName
+	{
+			// only static members:  fields, properties, methods 
+	}
+	
+	Eg:  Console is static class in .net library.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+Working with Strings in C#
+~~~~~~~~~~~~~~~~~~~~~~~
+
+  // string is a keyword which is act as a alias of String Class
+  string message1 = "Hello World";
+  String message2 = "Welcome to C#";
+  
+  Class Name :  System.String 
+
+  string str = String.Empty;  // Create Empty String
+
+
+Trim()
+ToUpper()
+ToLower()
+
+
+------------------------------------------------------------------------
+
+  // "Welcome to C#";
+string[] strArray = inputStr.Split(' ');
+
+// after split
+	Welcome 
+	to 
+	C#
+	
+// after reverse
+	C#
+	to 	
+	Welcome 
+
+	
+// After Join 
+	C#  to  Welcome 
+		
+
+
+
+
+
+
+
+Time :      O(n)	
+
+
+
+	
+	
+	
+	
+Input :  	Welcome to C#	
+Process:    emocleW  ot  #C
+Output :   C#  to Welcome 
+	
+		
+
+ H e l  l  o     W o r  l   d 
+ 0 1 2 3 4  5  6  7 8  9 10
+ 
+  
+ string to Char[]	:			str.ToCharArray();
+ char[] to string   :       	    new String(char[])
+ 
+  
+	
+	
