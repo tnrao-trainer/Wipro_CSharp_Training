@@ -1,0 +1,189 @@
+Training :   PCAT C#  
+Day-9:   17th  July, 2024
+~~~~~~~~~~~~~~~~~~~~~
+
+
+1.   Why do we use collections in C#? Examples of the collection classes?
+2.   Diff. between   Arrays vs  ArrayList  vs List?
+3.   Check the definitions of the following items in Graphs concept under DSA:
+					a.   Directed Graph
+					b.   Undirected Graph
+					c.    Weighted Graph 
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+Collections
+~~~~~~~~~~
+
+Array :				System
+							Strongly Typed 
+							Fixed Size 
+							
+							
+ArrayList :			System.Collections
+							Weakly  Typed 		----		Stores everything in System.Object class 
+																----		Typecasting is required while read/write the data 
+							Dynamic Size 		(Add/Remove)
+							
+							
+List:						System.Collections.Generics 
+							Strongly Typed
+							Dynamic Size (Add/Remove)
+
+
+
+
+
+
+
+   List<int> list = new List<int>();
+            list.Add(10);
+            list.Add(10);
+            list.Add(10);
+            list.Add(10);
+            list.Add(10);
+            list.Add(20);   
+            list.Add(30);
+			
+			
+ List<string> csList = new List<string>();
+            csList.Add("JAVA");
+            csList.Add("ASP.NET");
+            csList.Add("SQL SERVER");
+            csList.Add("VB.NET");
+            csList.Add("C#.NET");		
+			
+
+
+
+ // Object Initializer
+ Employee emp1 = new Employee() { Id = 10256, Name="Scott", Email="scott@gmail.com"  };
+ Employee emp2 = new Employee() { Id = 24656, Name = "Smith", Email = "smith@gmail.com" };
+ Employee emp3 = new Employee() { Id = 34565, Name = "Sandy", Email = "sandy@gmail.com" };
+ 
+ 
+ Cat cat = new Cat { Age = 10, Name = "Fluffy" };
+ 
+ 
+ ----------------------------------------------------------------------------------------------------------------------
+
+HashSet in C#  
+~~~~~~~~~~~~
+ -->  In C#, HashSet is an unordered collection of unique elements. 
+ -->  This collection is introduced in .NET 3.5. 
+ -->  It supports the implementation of sets and uses the hash table for storage. 
+ -->  This collection is of the generic type collection and it is defined under System.Collections.Generic namespace. 
+ --> It is generally used when we want to prevent duplicate elements from being placed in the collection. 
+ -->  The performance of the HashSet is much better in comparison to the list. 
+ 
+ 
+ Usage:	
+            
+            HashSet<string> myHashSet = new HashSet<string>();
+            myHashSet.Add("C");
+            myHashSet.Add("C");
+            myHashSet.Add("C++");
+            myHashSet.Add("C#");
+			
+ -------------------------------------------------------------------------------
+ 
+ Dictionary Collections
+ ~~~~~~~~~~~~~~~~~~~~~
+ 
+ -->   List/ArrayList/HashSet ---   collection of values 
+ -->   Dictionary  is a colletion of key-values pairs
+ -->   Accessing the values can be done using the keys only, not with index 
+ 
+ 
+ 
+	Dictionary<string, long>  phoneBook = new Dictionary<string, long>();
+		phoneBook.Add("Ravi", 5454545645);
+		phoneBook.Add("Logesh", 894545454);
+		phoneBook.Add("Robin", 976545645);
+		....
+		
+		
+		
+
+	
+    Dictionary<string, string> addressesBook = new Dictionary<string, string>();        
+        addresses.Add("Jeff", "123 Main Street, Redmond, WA 98052");
+        addresses.Add("Fred", "987 Pine Road, Phila., PA 19116");
+        addresses.Add("Mary", "PO Box 112233, Palo Alto, CA 94301");
+
+
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+LinkedList
+
+
+		Node  
+				---  int data; 
+				---   Node  next;
+
+		
+
+	Node obj = new Node(10);
+	
+	
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Problem Statement
+~~~~~~~~~~~~~~~~~~
+
+
+a. We need to store the customer names based on the plan. 
+
+		Gold ---		Scott, Smith
+		Silver ---      Ravi, Ramu, Ragu, Rajesh
+		.....
+		
+		Dictionary ----   	key,  value 
+									plan,  set of names 
+									
+									
+		Dictionary<   string,  List<string>    >	 customerList;
+		
+		
+
+b. Get plan as input and display the customer names based on the plan 
+
+
+		Enter the plan :  Gold
+		Members under Gold plan :     Scott, Smith,....
+
+		
+
+
+
+
+
+
+
+
+
+
