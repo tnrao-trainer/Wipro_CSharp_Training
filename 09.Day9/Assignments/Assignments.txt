@@ -1,0 +1,6 @@
+1.  Update the LinkedList example by add the following requirement:
+			-->    Add an extra method to remove the node based on the given value
+			
+2. Update the Dictionary (CustomerList) example by add the following requirement:
+			-->    Add an extra method to add new customer name based on the given plan
+  			
