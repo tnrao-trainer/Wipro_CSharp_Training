@@ -4,3 +4,24 @@
 2. Update the Dictionary (CustomerList) example by add the following requirement:
 			-->    Add an extra method to add new customer name based on the given plan
   			
+			
+3.  Write a program to display the time in words.  Read hours and minutes from user as input and display the time in words.  check the below sample formats:
+
+					5:00 -> five o' clock
+					5:01 -> one minute past five
+					5:10 -> ten minutes past five
+					5:15 -> quarter past five
+					5:28 -> twenty eight minutes past five
+					5:30 -> half past five
+					5:40 -> twenty minutes to six
+					5:45 -> quarter to six
+					5:47 -> thirteen minutes to six
+				
+				
+			Input :    
+						Enter hours :   5
+						Enter minutes :  15
+						
+			Output : 
+						quarter past five
+			
